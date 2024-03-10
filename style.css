@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Raleway;
+  src: url(DancingScript-Regular.ttf);
+}
+
+@font-face {
+  font-family: Raleway2;
+  src: url(rishiona-regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: beige;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: indianred;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-logo {
+  font-size: 32px;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: Raleway, cursive;
+}
+
+.navbar a {
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.header::before {
+  content: '.';
+  position: absolute;
+  width: 100%;
+  background: black;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 5px;
+  padding-bottom: 100px;
+}
+
+.article {
+  border-radius: 20px 20px 20px 20px;
+  grid-row: span 2;
+  height: 380px;
+  width: 400px;
+  background-color: white;
+  overflow: hidden;
+  margin-top: 150px;
+  margin-left: 80px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.panier {
+  margin-top: 20px;
+  border-radius: 20px 20px 20px 20px;
+  width: 150px;
+  background-color: white;
+  height: 35px;
+}
+
+.panier:hover {
+  background-color: lightgray;
+}
+
+.image {
+  width: 350px;
+  height: 230px;
+  padding-left: 35px;
+  margin-bottom: 30px;
+}
+
+.price {
+  display: inline;
+}
+
+.texte {
+  padding-left: 30px;
+}
